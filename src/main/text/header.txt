@@ -1,0 +1,13 @@
+// ==UserScript==
+// @name            Html-Online
+// @namespace       https://github.com/Amourspirit/Html-Online
+// @version         @BUILD_NUMBER@
+// @description     try to take over the world!
+// @author          Paul Moss
+// @include         /^https?:\/\/html-online\.com\/editor.*n=.*$/
+// @match           https://html-online.com/editor/
+// @run-at          document-end
+// @noframes
+// @license         MIT
+// @grant           none
+// ==/UserScript==
