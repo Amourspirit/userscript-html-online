@@ -1,7 +1,3 @@
-const { CheckerPlugin } = require('awesome-typescript-loader');
-const LiveReloadPlugin = require('webpack-livereload-plugin');
-const path = require('path');
-const swag = require('@ephox/swag');
 
 module.exports = function (grunt) {
   var packageData = grunt.file.readJSON('package.json');
@@ -11,9 +7,7 @@ module.exports = function (grunt) {
     pkg: packageData,
 
     clean: {
-      dirs: ['js'],
-      dist: ['dist'],
-      scratch: ['scratch']
+      dirs: ['scratch', 'dist']
     },
 
     tslint: {
@@ -47,7 +41,7 @@ module.exports = function (grunt) {
     }
   });
   require('load-grunt-tasks')(grunt);
-  grunt.loadNpmTasks('@ephox/swag');
+  // grunt.loadNpmTasks('@ephox/swag');
   grunt.loadNpmTasks('grunt-contrib-concat');
   // grunt.loadNpmTasks('grunt-zip');
   grunt.loadNpmTasks('grunt-text-replace');
@@ -58,7 +52,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'clean',
-    // 'copy:ts',
     'tslint',
     'shell:tsc',
     'shell:rollup',
