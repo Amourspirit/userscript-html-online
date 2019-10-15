@@ -1,6 +1,6 @@
 {
   "name": "html-online",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Userscript for html-online.com editor features",
   "main": "index.js",
   "scripts": {
