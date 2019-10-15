@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Html-Online
 // @namespace       https://github.com/Amourspirit/userscript-html-online
-// @version         1.0.2
+// @version         1.0.3
 // @description     Cleans up some limits of the html editor including allowing ad blockers
 // @author          Paul Moss
 // @include         /^https?:\/\/html-online\.com\/editor.*n=.*$/
@@ -25,9 +25,6 @@
         }
         if ($('div#warningAboveSource').length) {
             $('div#warningAboveSource').remove();
-        }
-        if ($('.szekcio4').length) {
-            $('.szekcio4').hide();
         }
         if ($('.szekcio4').length) {
             $('.szekcio4').hide();

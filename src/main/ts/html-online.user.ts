@@ -11,9 +11,6 @@ $(document).ready((): void => {
     if ($('.szekcio4').length) {
         $('.szekcio4').hide();
     }
-    if ($('.szekcio4').length) {
-        $('.szekcio4').hide();
-    }
     if ($('.szekcio1').length) {
         $('.szekcio1').css('width', '49%');
     }
